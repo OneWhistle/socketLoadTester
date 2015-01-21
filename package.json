@@ -1,0 +1,21 @@
+{
+  "name": "WhistleSocketTester",
+  "version": "0.0.1",
+  "author": "Sarath M S<work@sarathms.me> for OneWhistle Inc.",
+  "readme": "Nothing to read yet",
+  "description": "Utility to load test Whistle Socket.io Server",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:OneWhistle/socketLoadTester.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "DEBUG='SLT' node main.js"
+  },
+  "dependencies": {
+    "commander": "^2.6.0",
+    "debug": "*",
+    "moment": "^2.9.0",
+    "socket.io-client": "^1.3.2"
+  }
+}
