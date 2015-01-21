@@ -189,7 +189,7 @@ if (showProgress) {
   debugger;
   progressLoop = setInterval(function() {
     if (shuttingDown === false) {
-      log("Tried: %d Connected: %d Errors: %d Timeouts: %d", sockets.length, stats.connects.length, stats.errors.length, stats.timeouts.length);
+      log("Tried: %d Connected: %d Disconnected: %d Premature DCs: %d Errors: %d Timeouts: %d", sockets.length, stats.connects.length, stats.disconnects.length, stats.prematureDCs.length, stats.errors.length, stats.timeouts.length);
     }
   }, program.progress);  
 }
